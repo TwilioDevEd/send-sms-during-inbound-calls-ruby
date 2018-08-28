@@ -1,7 +1,8 @@
 require 'sinatra'
+require 'sinatra/multi_route'
 require 'twilio-ruby'
 
-post '/answer' do
+route :get, :post, '/answer' do
   from = params['From']
   twilio_number = params['To']
   send_sms(from, twilio_number)

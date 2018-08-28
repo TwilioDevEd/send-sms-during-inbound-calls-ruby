@@ -6,3 +6,4 @@ git_source(:github) {|repo_name| "https://github.com/send-sms-during-inbound-cal
 
 gem 'twilio-ruby', '~> 5.12.3'
 gem 'sinatra'
+gem 'sinatra-contrib'
