@@ -4,6 +4,8 @@
 
 # Send an SMS during a phone call. Powered by Twilio and Ruby/Sinatra
 
+![](https://github.com/TwilioDevEd/send-sms-during-inbound-calls-ruby/workflows/Ruby/badge.svg)
+
 > We are currently in the process of updating this sample template. If you are encountering any issues with the sample, please open an issue at [github.com/twilio-labs/code-exchange/issues](https://github.com/twilio-labs/code-exchange/issues) and we'll try to help you.
 
 Learn how to send an SMS to someone who's called your Twilio phone number while they're on the call.
@@ -12,10 +14,29 @@ This small sample application will say a short message to an inbound caller and,
 
 [Read the full tutorial here!](https://www.twilio.com/docs/sms/tutorials/send-sms-during-phone-call-ruby)
 
+## Features
 
-## Local Development
+- [Sinatra](http://sinatrarb.com/)
+- [Twilio Ruby Helper Library](https://www.twilio.com/docs/libraries/ruby)
+- Unit tests using [`Rspec`](https://rspec.info/)
+- [Automated CI testing using GitHub Actions](/.github/workflows/rails.yml)
 
-This project is built using the [Sinatra](http://sinatrarb.com/) web framework, Ruby 2.5, and the [Twilio Ruby Helper Library](https://www.twilio.com/docs/libraries/ruby).
+## Set up
+
+### Requirements
+
+- [Ruby](https://www.ruby-lang.org/en/) **2.6.x** version.
+
+### Twilio Account Settings
+
+You need to collect all the config values to run the application.
+
+| Config Value  | Description |
+| :-------------  |:------------- |
+TWILIO_ACCOUNT_SID / TWILIO_AUTH_TOKEN | In [Twilio Account Settings](https://www.twilio.com/console).
+
+
+### Local development
 
 1. First clone this repository and `cd` into it.
 
@@ -30,23 +51,17 @@ This project is built using the [Sinatra](http://sinatrarb.com/) web framework, 
     $ bundle install
     ```
 
-1. Create an environment file (`.env`) and define your Twilio Account SID and Auth Token. Both of these can be found in your [Twilio console](https://www.twilio.com/console).
-
-   ```bash
-   export ACCOUNT_SID=ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-   export AUTH_TOKEN=your_auth_token
-   ```
-
-1. Load the created file into your environment.
+1. Copy the sample configuration file and edit it to match your configuration.
 
     ```bash
-    source .env
+    $ cp .env.example .env
     ```
+   See [Twilio Account Settings](#twilio-account-settings) to locate the necessary environment variables.
 
-1. Start the server.
+1. Start the server, the following command will run the application on port 4567.
 
     ```bash
-    $ ruby app.rb
+    $ bundle exec ruby app.rb
     ```
 
 1. Expose the application to the wider Internet using [ngrok](https://ngrok.com/).
@@ -65,9 +80,19 @@ This project is built using the [Sinatra](http://sinatrarb.com/) web framework, 
   https://<your-ngrok-subdomain>.ngrok.io/answer
   ```
 
+That's it!
+
+### Test
+
+1. To run the tests locally, execute the following command.
+
+    ```bash
+    $ bundle exec rspec
+    ```
 
 ## Meta
 
 * No warranty expressed or implied. Software is as is. Diggity.
+* The CodeExchange repository can be found [here](https://github.com/twilio-labs/code-exchange/).
 * [MIT License](http://www.opensource.org/licenses/mit-license.html)
 * Lovingly crafted by Twilio Developer Education.
