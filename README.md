@@ -19,7 +19,7 @@ This small sample application will say a short message to an inbound caller and,
 - [Sinatra](http://sinatrarb.com/)
 - [Twilio Ruby Helper Library](https://www.twilio.com/docs/libraries/ruby)
 - Unit tests using [`Rspec`](https://rspec.info/)
-- [Automated CI testing using GitHub Actions](/.github/workflows/rails.yml)
+- Automated CI testing using GitHub Actions
 
 ## Set up
 
