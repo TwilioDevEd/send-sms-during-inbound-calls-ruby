@@ -6,7 +6,7 @@
 
 ![](https://github.com/TwilioDevEd/send-sms-during-inbound-calls-ruby/workflows/Ruby/badge.svg)
 
-> We are currently in the process of updating this sample template. If you are encountering any issues with the sample, please open an issue at [github.com/twilio-labs/code-exchange/issues](https://github.com/twilio-labs/code-exchange/issues) and we'll try to help you.
+> This template is part of Twilio CodeExchange. If you encounter any issues with this code, please open an issue at [github.com/twilio-labs/code-exchange/issues](https://github.com/twilio-labs/code-exchange/issues).
 
 Learn how to send an SMS to someone who's called your Twilio phone number while they're on the call.
 
