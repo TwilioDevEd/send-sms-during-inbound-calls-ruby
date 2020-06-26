@@ -1,6 +1,9 @@
 require 'sinatra'
 require 'sinatra/multi_route'
 require 'twilio-ruby'
+require 'dotenv'
+
+Dotenv.load
 
 route :get, :post, '/answer' do
   from = params['From']
@@ -16,8 +19,8 @@ route :get, :post, '/answer' do
 end
 
 def send_sms(from, twilio_number)
-  account_sid = ENV['ACCOUNT_SID']
-  auth_token = ENV['AUTH_TOKEN']
+  account_sid = ENV['TWILIO_ACCOUNT_SID']
+  auth_token = ENV['TWILIO_AUTH_TOKEN']
   client = Twilio::REST::Client.new(account_sid, auth_token)
 
   begin
