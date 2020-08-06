@@ -7,7 +7,7 @@ git_source(:github) {|repo_name| "https://github.com/send-sms-during-inbound-cal
 gem 'dotenv', '~> 2.7.5'
 gem 'sinatra', '~> 2.0.8.1'
 gem 'sinatra-contrib', '~> 2.0.8.1'
-gem 'twilio-ruby', '~> 5.34.0'
+gem 'twilio-ruby', '~> 5.39.3'
 
 group :test do
   gem 'rack-test'
