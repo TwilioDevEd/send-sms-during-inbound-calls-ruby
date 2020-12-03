@@ -1,7 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    backports (3.17.1)
     diff-lcs (1.4.4)
     dotenv (2.7.5)
     faraday (1.1.0)
@@ -9,14 +8,14 @@ GEM
       ruby2_keywords
     jwt (2.2.2)
     mini_portile2 (2.4.0)
-    multi_json (1.14.1)
+    multi_json (1.15.0)
     multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     rack (2.2.3)
-    rack-protection (2.0.8.1)
+    rack-protection (2.1.0)
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -34,17 +33,16 @@ GEM
       rspec-support (~> 3.10.0)
     rspec-support (3.10.0)
     ruby2_keywords (0.0.2)
-    sinatra (2.0.8.1)
+    sinatra (2.1.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.8.1)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
       tilt (~> 2.0)
-    sinatra-contrib (2.0.8.1)
-      backports (>= 2.8.2)
+    sinatra-contrib (2.1.0)
       multi_json
       mustermann (~> 1.0)
-      rack-protection (= 2.0.8.1)
-      sinatra (= 2.0.8.1)
+      rack-protection (= 2.1.0)
+      sinatra (= 2.1.0)
       tilt (~> 2.0)
     tilt (2.0.10)
     twilio-ruby (5.44.0)
@@ -59,8 +57,8 @@ DEPENDENCIES
   dotenv (~> 2.7.5)
   rack-test
   rspec
-  sinatra (~> 2.0.8.1)
-  sinatra-contrib (~> 2.0.8.1)
+  sinatra (~> 2.1.0)
+  sinatra-contrib (~> 2.1.0)
   twilio-ruby (~> 5.44.0)
 
 BUNDLED WITH
