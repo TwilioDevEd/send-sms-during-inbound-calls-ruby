@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.4.4)
-    dotenv (2.7.5)
+    dotenv (2.7.6)
     faraday (1.1.0)
       multipart-post (>= 1.2, < 3)
       ruby2_keywords
@@ -54,7 +54,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dotenv (~> 2.7.5)
+  dotenv (~> 2.7.6)
   rack-test
   rspec
   sinatra (~> 2.1.0)
