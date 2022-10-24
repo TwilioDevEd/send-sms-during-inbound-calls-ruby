@@ -10,6 +10,6 @@ gem 'sinatra-contrib', '~> 2.1.0'
 gem 'twilio-ruby', '~> 5.52.0'
 
 group :test do
-  gem 'rack-test'
+  gem 'rack-test', '>= 2.0.0'
   gem 'rspec'
 end
